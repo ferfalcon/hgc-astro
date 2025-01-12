@@ -1,5 +1,5 @@
 {
-  "name": "",
+  "name": "hgc-astro",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -9,6 +9,7 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^5.1.5"
+    "astro": "^5.1.5",
+    "gsap": "^3.12.5"
   }
 }
