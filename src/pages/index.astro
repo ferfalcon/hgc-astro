@@ -1,4 +1,6 @@
 ---
+import Header from '../components/Header.astro';
+import PartnersLogos from '../components/PartnersLogos.astro';
 import '../../src/styles/reset.css';
 const pageTitle = 'Hunt, Gather | Makers + Doers | Austin, TX';
 ---
@@ -12,38 +14,7 @@ const pageTitle = 'Hunt, Gather | Makers + Doers | Austin, TX';
 		<title>{pageTitle}</title>
 	</head>
 	<body>
-		<nav>
-			<a href="/">
-				<img
-					src="huntgather-logo--cream.svg"
-					loading="lazy"
-					alt="Hunt, Gather logo."
-				/>
-			</a>
-			<ul>
-				<li>
-					<a href="/work">Home</a>
-				</li>
-				<li>
-					<a href="/work">Work</a>
-				</li>
-				<li>
-					<a href="/about-us">About</a>
-				</li>
-				<li>
-					<a href="/services">Services</a>
-				</li>
-				<li>
-					<a href="/careers">Careers</a>
-				</li>
-				<li>
-					<a href="#contact-us">Contact</a>
-				</li>
-			</ul>
-			<button aria-label="Open menu." class="nav-toggle-button" type="button"
-				>Menu</button
-			>
-		</nav>
+		<Header />
 		<h1>A full-service creative agency based in Austin, TX</h1>
 		<h2>
 			<span>Creative</span> First, Always
@@ -82,46 +53,6 @@ const pageTitle = 'Hunt, Gather | Makers + Doers | Austin, TX';
 			<li>Webflow Development</li>
 		</ul>
 
-		<ul>
-			<li>
-				<img src="/public/partners/lone-star.png" loading="lazy" alt="Lone Star Original"/>
-			</li>
-			<li>
-				<img src="/public/partners/indeed.svg" loading="lazy" alt="indeed"/>
-			</li>
-			<li>
-				<img src="/public/partners/q2.svg" loading="lazy" alt="Q2"/>
-			</li>
-			<li>
-				<img src="/public/partners/dell.svg" loading="lazy" alt="DELL" >
-			</li>
-			<li>
-				<img src="/public/partners/hopdoddy.svg" loading="lazy" alt="hopdoddy Burger Bar"/>
-			</li>
-			<li>
-				<img src="/public/partners/edf.svg" loading="lazy" alt="Environmental Defense Fund"/>
-			</li>
-			<li>
-				<img src="/public/partners/soundly.svg" loading="lazy" alt="Soundly"/>
-			</li>
-			<li>
-				<img src="/public/partners/lppc.svg" loading="lazy" alt="Large Public Power Council"/>
-			</li>
-			<li>
-				<img src="/public/partners/piza-golf.svg" loading="lazy" alt="Piza Golf"/>
-			</li>
-			<li>
-				<img src="/public/partners/whole-foods-market.svg" loading="lazy" alt="Whole Foods Market"/>
-			</li>
-			<li>
-				<img src="/public/partners/bloomberg-philanthropies.svg" loading="lazy" alt="Bloomberg Philanthropies. Beyond Petrochemicals."/>
-			</li>
-			<li>
-				<img src="/public/partners/gray-solutions.png" loading="lazy" alt="Gray Solutions."/>
-			</li>
-			<li>
-				<img src="/public/partners/safeguard-global.png" loading="lazy" alt="Safeguard Global."/>
-			</li>
-		</ul>
+		<PartnersLogos />
 	</body>
 </html>
