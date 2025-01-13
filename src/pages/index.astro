@@ -1,34 +1,24 @@
 ---
-import Header from '../components/Header.astro';
+import MainLayout from '../layouts/MainLayout.astro';
 import PartnersLogos from '../components/PartnersLogos.astro';
-import '../../src/styles/reset.css';
 const pageTitle = 'Hunt, Gather | Makers + Doers | Austin, TX';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{pageTitle}</title>
-	</head>
-	<body>
-		<Header />
-		<h1>A full-service creative agency based in Austin, TX</h1>
-		<h2>
-			<span>Creative</span> First, Always
-		</h2>
-		<p>
-			Our women-owned team of Makers + Doers gets fired up about big ideas and
-			building connections between brands and consumers. We are purposeful by
-			design and meticulous with our craft, and we give a damn about our clients
-			and the impact they have on the world. This passion and dedication show in
-			our work.
-		</p>
+<MainLayout>
+	<h1>A full-service creative agency based in Austin, TX</h1>
 
-		<p>Fullservice not full ego</p>
+	<video width="100%">
+		<source src="/src/videos/reel-video-home.mp4" type="video/mp4" />
+		<a href="/src/videos/reel-video-home.mp4">Download the video.</a>
+	</video>
 
+	<p><b>Creative</b> First, Always</p>
+
+	<p>Our women-owned team of Makers + Doers gets fired up about big ideas and  building connections between brands and consumers. We are purposeful by design and meticulous with our craft, and we give a damn about our clients and the impact they have on the world. This passion and dedication show in our work.</p>
+
+	<h2>Full service not full ego</h2>
+
+	<section>
 		<h3>Strategy</h3>
 		<ul>
 			<li>Brand Strategy</li>
@@ -36,7 +26,9 @@ const pageTitle = 'Hunt, Gather | Makers + Doers | Austin, TX';
 			<li>Comms + CRM Strategy</li>
 			<li>Data + Analytics</li>
 		</ul>
+	</section>
 
+	<section>
 		<h3>Creative</h3>
 		<ul>
 			<li>Copy + Design</li>
@@ -44,7 +36,9 @@ const pageTitle = 'Hunt, Gather | Makers + Doers | Austin, TX';
 			<li>Social Media Production</li>
 			<li>Video + Photography</li>
 		</ul>
+	</section>
 
+	<section>
 		<h3>Technology</h3>
 		<ul>
 			<li>AI Strategy + Implementation</li>
@@ -52,7 +46,7 @@ const pageTitle = 'Hunt, Gather | Makers + Doers | Austin, TX';
 			<li>Web + Mobile Applications</li>
 			<li>Webflow Development</li>
 		</ul>
+	</section>
 
-		<PartnersLogos />
-	</body>
-</html>
+	<PartnersLogos />
+</MainLayout>

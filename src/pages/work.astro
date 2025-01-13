@@ -1,29 +1,20 @@
 ---
-
+import MainLayout from '../layouts/MainLayout.astro';
+const pageTitle = 'About Us | Hunt, Gather | Austin, TX';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>About Us | Hunt, Gather | Austin, TX</title>
-	</head>
-	<body>
-		<h1>What we make together matters</h1>
+<MainLayout>
+	<h1>What we make together matters</h1>
 
-		<h2>2023 Impact Report</h2>
-		<p>Whole Foods Market</p>
+	<h2>2023 Impact Report</h2>
+	<p>Whole Foods Market</p>
 
-		<h2>Cybertopia</h2>
-		<p>Dell</p>
+	<h2>Cybertopia</h2>
+	<p>Dell</p>
 
-		<h2>No Strangers In Texas</h2>
-		<p>Lone Star</p>
+	<h2>No Strangers In Texas</h2>
+	<p>Lone Star</p>
 
-		<h2>Annual Sustainability Report</h2>
-		<p>Whole Foods</p>
-
-	</body>
-</html>
+	<h2>Annual Sustainability Report</h2>
+	<p>Whole Foods</p>
+</MainLayout>
