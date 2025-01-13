@@ -1,0 +1,64 @@
+:root {
+	--hg-black: #1d1316;
+	--hg-white: #f3f2ed;
+	--whisper: #f3f2ed33;
+	--hg-gold: #bc9d09;
+	--olive-oil: #887000;
+	--hg-darker-black: black;
+	--darker-gold-for-a11y: #af8b2e;
+	--dark-slate-grey: #1c1a19;
+	--sales-gradient-blue: #d8e6ff;
+	--sales-gradient-peach: #ffe8dc;
+	--brown: #451400;
+}
+
+footer {
+	padding: 0 1.5rem 4rem;
+	background: var(--hg-darker-black);
+}
+
+.contact-header {
+	font-family: "PT Sans", serif;
+	font-weight: 700;
+	font-style: normal;
+}
+
+.signature {
+	color: var(--hg-white);
+	font-size: .85rem;
+	text-transform: uppercase;
+	opacity: .8;
+
+	a {
+		color: inherit;
+		text-decoration: none;
+	}
+}
+
+.wbe-logo {
+	max-width: 120px;
+}
+
+.office-name {
+	color: var(--hg-white);
+	font-family: "Oswald", serif;
+  font-weight: 600;
+  font-style: normal;
+	text-transform: uppercase;
+	font-size: 1.125rem;
+	letter-spacing: .03em;
+}
+
+.office {
+	color: var(--hg-white);
+}
+
+.social-link {
+	color: var(--hg-white);
+	font-family: "Oswald", serif;
+  font-weight: 600;
+  font-style: normal;
+	text-transform: uppercase;
+	font-size: 1.25rem;
+	text-decoration: none;
+}
