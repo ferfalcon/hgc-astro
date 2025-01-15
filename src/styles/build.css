@@ -62,3 +62,14 @@ footer {
 	font-size: 1.25rem;
 	text-decoration: none;
 }
+
+.footer-form {
+	display: grid;
+}
+
+.footer-input {
+	border: solid thin transparent;
+	background: transparent;
+	border-bottom-color: var(--hg-white);
+	padding: .25rem;
+}
