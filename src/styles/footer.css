@@ -1,0 +1,155 @@
+footer {
+	color: var(--hg-white);
+	background: var(--hg-darker-black);
+	padding: 0 1.25rem 4rem;
+}
+
+.mails-n-form {
+	display: grid;
+	gap: 2.25rem;
+}
+
+.footer-heading {
+	font-weight: 700;
+	border-left: 1px solid var(--hg-gold);
+	display: block;
+	padding: .25rem .75rem;
+}
+
+.footer-mail {
+	margin-block: 0;
+}
+
+.footer-mail__mail {
+	font-weight: 500;
+	color: var(--hg-white);
+	padding: .5rem .775rem;
+	text-decoration: none;
+	display: flex;
+	align-items: baseline;
+	gap: .5rem;
+
+	&::after {
+		content: '';
+		background-image: url(/public/arrow-gold--smaller.svg);
+		background-repeat: no-repeat;
+		width: 28px;
+		height: 10px;
+		transform: translateY(1px);
+	}
+}
+
+.footer-form {
+	display: grid;
+	gap: 1.25rem;
+
+	p {
+		margin-block: 0;
+	}
+
+	label {
+		display: none;
+	}
+}
+
+.footer-form__input {
+	border: solid thin transparent;
+	background: transparent;
+	border-bottom-color: var(--hg-white);
+	padding: .625rem .125rem;
+	resize: none;
+}
+
+.footer-form__submit {
+	font-weight: 500;
+	color: var(--hg-black);
+	background: var(--hg-gold);
+	border: solid thin transparent;
+	aspect-ratio: 1;
+	padding: .875rem;
+	max-width: min-content;
+	border-radius: 100%;
+	transform: rotateZ(-12deg);
+	justify-self: end;
+}
+
+.social-links-n-offices {
+	display: grid;
+	gap: 2rem;
+}
+
+.social-links {
+	display: flex;
+	gap: 2rem;
+}
+
+.social-links_link {
+	color: inherit;
+	font-family: "Oswald", serif;
+	font-size: 1.25rem;
+  font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: .0625em;
+	text-decoration: none;
+	border-bottom: 2px solid var(--hg-gold);
+	padding-bottom: .125rem;
+}
+
+.office {
+	display: grid;
+	gap: .375rem;
+
+	@media (min-width: 24rem) {
+		font-size: 1.125rem;
+	}
+
+	p {
+		margin-block: 0;
+	}
+}
+
+.office__name {
+	font-family: "Oswald", serif;
+  font-weight: 600;
+  font-style: normal;
+	text-transform: uppercase;
+	font-size: 1.125rem;
+	letter-spacing: .05em;
+	margin-block: 0;
+	display: flex;
+	align-items: center;
+	gap: .125rem;
+
+	&::before {
+		content: '';
+		aspect-ratio: 1;
+		background-image: url(/public/map-pin-solid.svg);
+		background-repeat: no-repeat;
+		height: 18px;
+	}
+}
+
+.wbe-logo {
+	max-width: 120px;
+}
+
+.footer-signature {
+	font-size: .8rem;
+	font-weight: 500;
+	letter-spacing: .175em;
+	line-height: 1.5;
+	text-transform: uppercase;
+	color: hsl(60 0% 60%);
+	display: flex;
+}
+
+.footer-signature__copyright {
+	padding: .25rem 1rem .125rem 0;
+}
+
+.footer-signature__privacy_link {
+	color: inherit;
+	text-decoration: none;
+	padding: .25rem 1.125rem .125rem;
+	border-left: solid thin hsl(60 0% 60%);
+}
