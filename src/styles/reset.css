@@ -33,6 +33,15 @@ img {
 
 button {
 	font-family: inherit;
-	font-size: medium;
 	cursor: pointer;
+}
+
+input {
+	font: inherit;
+}
+
+textarea {
+	font: inherit;
+	height: fit-content;
+	field-sizing: content;
 }

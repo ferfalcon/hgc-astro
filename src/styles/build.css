@@ -1,6 +1,7 @@
 :root {
 	--hg-black: #1d1316;
-	--hg-white: #f3f2ed;
+	/* --hg-white: #f3f2ed; */
+	--hg-white: hsl(60 5% 85%);
 	--whisper: #f3f2ed33;
 	--hg-gold: #bc9d09;
 	--olive-oil: #887000;
@@ -13,7 +14,8 @@
 }
 
 footer {
-	padding: 0 1.5rem 4rem;
+	padding: 0 1.25rem 4rem;
+	color: var(--hg-white);
 	background: var(--hg-darker-black);
 }
 
@@ -21,19 +23,20 @@ footer {
 	font-family: "PT Sans", serif;
 	font-weight: 700;
 	font-style: normal;
+	border-left: 1px solid var(--hg-gold);
+	display: block;
+	padding: .25rem .75rem;
 }
 
-.signature {
+.contact-mail {
+	display: inline-block;
+	font-weight: 500;
 	color: var(--hg-white);
-	font-size: .85rem;
-	text-transform: uppercase;
-	opacity: .8;
-
-	a {
-		color: inherit;
-		text-decoration: none;
-	}
+	padding: .625rem .775rem;
+	text-decoration: none;
 }
+
+
 
 .wbe-logo {
 	max-width: 120px;
@@ -72,4 +75,46 @@ footer {
 	background: transparent;
 	border-bottom-color: var(--hg-white);
 	padding: .25rem;
+}
+
+.footer-submit {
+	font-weight: 500;
+	color: var(--hg-black);
+	background: var(--hg-gold);
+	border: solid thin transparent;
+	aspect-ratio: 1;
+	padding: .875rem;
+	max-width: min-content;
+	border-radius: 100%;
+	transform: rotateZ(-12deg);
+}
+
+textarea {
+	background: transparent;
+	border: solid thin transparent;
+	padding: .25rem;
+}
+
+
+.footer-signature {
+	font-size: .8rem;
+	font-weight: 500;
+	letter-spacing: .175em;
+	line-height: 1.5;
+	text-transform: uppercase;
+	color: hsl(60 0% 60%);
+	display: flex;
+
+	span {
+		flex-grow: 1;
+	}
+
+	a {
+		color: inherit;
+		text-decoration: none;
+		flex-basis: 35%;
+		display: inline-block;
+		padding: .25rem 1rem 0;
+		border-left: solid thin hsl(60 0% 60%);
+	}
 }
