@@ -1,9 +1,14 @@
 :root {
 	--hg-black: #1d1316;
+
 	/* --hg-white: #f3f2ed; */
 	--hg-white: hsl(60 5% 85%);
+
 	--whisper: #f3f2ed33;
-	--hg-gold: #bc9d09;
+
+	/* --hg-gold: #bc9d09; */
+	--hg-gold: hsl(45 100% 35%);
+
 	--olive-oil: #887000;
 	--hg-darker-black: black;
 	--darker-gold-for-a11y: #af8b2e;
@@ -14,15 +19,14 @@
 }
 
 footer {
-	padding: 0 1.25rem 4rem;
+	font-family: "PT Sans", serif;
 	color: var(--hg-white);
+	padding: 0 1.25rem 4rem;
 	background: var(--hg-darker-black);
 }
 
 .contact-header {
-	font-family: "PT Sans", serif;
 	font-weight: 700;
-	font-style: normal;
 	border-left: 1px solid var(--hg-gold);
 	display: block;
 	padding: .25rem .75rem;
@@ -33,36 +37,6 @@ footer {
 	font-weight: 500;
 	color: var(--hg-white);
 	padding: .625rem .775rem;
-	text-decoration: none;
-}
-
-
-
-.wbe-logo {
-	max-width: 120px;
-}
-
-.office-name {
-	color: var(--hg-white);
-	font-family: "Oswald", serif;
-  font-weight: 600;
-  font-style: normal;
-	text-transform: uppercase;
-	font-size: 1.125rem;
-	letter-spacing: .03em;
-}
-
-.office {
-	color: var(--hg-white);
-}
-
-.social-link {
-	color: var(--hg-white);
-	font-family: "Oswald", serif;
-  font-weight: 600;
-  font-style: normal;
-	text-transform: uppercase;
-	font-size: 1.25rem;
 	text-decoration: none;
 }
 
@@ -93,8 +67,72 @@ textarea {
 	background: transparent;
 	border: solid thin transparent;
 	padding: .25rem;
+	resize: none;
 }
 
+
+
+
+
+.social-links-n-offices {
+	display: grid;
+	gap: 2rem;
+}
+
+.social-links {
+	display: flex;
+	gap: 2rem;
+}
+
+.social-links_link {
+	color: inherit;
+	font-family: "Oswald", serif;
+	font-size: 1.25rem;
+  font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: .0625em;
+	text-decoration: none;
+	border-bottom: 2px solid var(--hg-gold);
+	padding-bottom: .125rem;
+}
+
+.office {
+	display: grid;
+	gap: .375rem;
+
+	@media (min-width: 24rem) {
+		font-size: 1.125rem;
+	}
+
+	p {
+		margin-block: 0;
+	}
+}
+
+.office__name {
+	font-family: "Oswald", serif;
+  font-weight: 600;
+  font-style: normal;
+	text-transform: uppercase;
+	font-size: 1.125rem;
+	letter-spacing: .05em;
+	margin-block: 0;
+	display: flex;
+	align-items: center;
+	gap: .125rem;
+
+	&::before {
+		content: '';
+		aspect-ratio: 1;
+		background-image: url(/public/map-pin-solid.svg);
+		background-repeat: no-repeat;
+		height: 18px;
+	}
+}
+
+.wbe-logo {
+	max-width: 120px;
+}
 
 .footer-signature {
 	font-size: .8rem;
@@ -104,17 +142,15 @@ textarea {
 	text-transform: uppercase;
 	color: hsl(60 0% 60%);
 	display: flex;
+}
 
-	span {
-		flex-grow: 1;
-	}
+.footer-signature__copyright {
+	padding: .25rem 1rem .125rem 0;
+}
 
-	a {
-		color: inherit;
-		text-decoration: none;
-		flex-basis: 35%;
-		display: inline-block;
-		padding: .25rem 1rem 0;
-		border-left: solid thin hsl(60 0% 60%);
-	}
+.footer-signature__privacy_link {
+	color: inherit;
+	text-decoration: none;
+	padding: .25rem 1.125rem .125rem;
+	border-left: solid thin hsl(60 0% 60%);
 }
