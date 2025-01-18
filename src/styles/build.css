@@ -19,39 +19,68 @@
 }
 
 footer {
-	font-family: "PT Sans", serif;
 	color: var(--hg-white);
-	padding: 0 1.25rem 4rem;
 	background: var(--hg-darker-black);
+	padding: 0 1.25rem 4rem;
 }
 
-.contact-header {
+.mails-n-form {
+	display: grid;
+	gap: 2.25rem;
+}
+
+.footer-heading {
 	font-weight: 700;
 	border-left: 1px solid var(--hg-gold);
 	display: block;
 	padding: .25rem .75rem;
 }
 
-.contact-mail {
-	display: inline-block;
+.footer-mail {
+	margin-block: 0;
+}
+
+.footer-mail__mail {
 	font-weight: 500;
 	color: var(--hg-white);
-	padding: .625rem .775rem;
+	padding: .5rem .775rem;
 	text-decoration: none;
+	display: flex;
+	align-items: baseline;
+	gap: .5rem;
+
+	&::after {
+		content: '';
+		background-image: url(/public/arrow-gold--smaller.svg);
+		background-repeat: no-repeat;
+		width: 28px;
+		height: 10px;
+		transform: translateY(1px);
+	}
 }
 
 .footer-form {
 	display: grid;
+	gap: 1.25rem;
+
+	p {
+		margin-block: 0;
+	}
+
+	label {
+		display: none;
+	}
 }
 
-.footer-input {
+.footer-form__input {
 	border: solid thin transparent;
 	background: transparent;
 	border-bottom-color: var(--hg-white);
-	padding: .25rem;
+	padding: .625rem .125rem;
+	resize: none;
 }
 
-.footer-submit {
+.footer-form__submit {
 	font-weight: 500;
 	color: var(--hg-black);
 	background: var(--hg-gold);
@@ -61,18 +90,8 @@ footer {
 	max-width: min-content;
 	border-radius: 100%;
 	transform: rotateZ(-12deg);
+	justify-self: end;
 }
-
-textarea {
-	background: transparent;
-	border: solid thin transparent;
-	padding: .25rem;
-	resize: none;
-}
-
-
-
-
 
 .social-links-n-offices {
 	display: grid;
